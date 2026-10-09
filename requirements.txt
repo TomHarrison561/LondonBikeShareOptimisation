@@ -4,3 +4,5 @@ psycopg2-binary
 matplotlib
 pulp
 python-dotenv
+jupyterlab
+requests
