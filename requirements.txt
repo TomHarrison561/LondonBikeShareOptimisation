@@ -6,3 +6,5 @@ pulp
 python-dotenv
 jupyterlab
 requests
+pulp<4
+scikit-learn
