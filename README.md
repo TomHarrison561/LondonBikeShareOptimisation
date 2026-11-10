@@ -12,7 +12,7 @@ I then set up rebalancing (moving bikes from full stations to empty ones) as a t
 
 I also forecast hourly demand with ridge regression. On a time-based train/test split it gets a mean absolute error of 141 journeys/hour, against 196 for just using the same hour last week.
 
-The cleaning logic is in `sql/`, the Python in `src/`, and the analysis and plots in `notebooks/analysis.ipynb`. Seven stations from January aren't in TfL's current location feed, so they're left out of the rebalancing.
+The cleaning logic is in `sql/`, the Python in `src/`, and the analysis and plots in `notebooks/analysis.ipynb`. Seven stations from January are not in TfL's current location feed, so they are left out of the rebalancing.
 
 To run it, put the TfL journey CSVs in `data/raw/`, set `BIKESHARE_DB_URL` in a `.env` file to point at a PostgreSQL database, then:
 
@@ -21,4 +21,4 @@ pip install -r requirements.txt
 python src/run_pipeline.py
 ```
 
-Distances are straight-line rather than road distances, and two weeks of January data is a small sample. Next I'd like to add more months, weather data and per-station forecasts.
+Distances are straight-line rather than road distances, and two weeks of January data is a small sample. In the future, I would like to add more months, weather data and per-station forecasts.
