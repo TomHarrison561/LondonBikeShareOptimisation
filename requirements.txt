@@ -1,10 +1,11 @@
 pandas
+numpy
 sqlalchemy
 psycopg2-binary
 matplotlib
-pulp
+contextily
+pulp<4
 python-dotenv
 jupyterlab
 requests
-pulp<4
 scikit-learn
